@@ -1,0 +1,110 @@
+@import url('http://fonts.cdnfonts.com/css/lilly');
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #d7fce3, #f0f8ff);
+  min-height: 100vh;
+  font-family: 'Lilly', sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Lilly', sans-serif;
+  font-size: 56px;
+  color: #003d33;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: #004d40;
+}
+
+.gen input {
+  height: 45px;
+  width: 320px;
+  font-size: 18px;
+  padding: 8px 12px;
+  border: 2px solid #004d40;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.gen input:focus {
+  border-color: #009688;
+  box-shadow: 0 0 10px rgba(0, 150, 136, 0.5);
+  transform: scale(1.03);
+}
+
+button {
+  position: relative;
+  height: 45px;
+  width: 130px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #00796b, #004d40);
+  box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #004d40, #003d33);
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.extra {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  flex-wrap: wrap;
+  background-color: rgba(0, 77, 64, 0.05);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.output-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  border: 2px dashed #004d40;
+  border-radius: 10px;
+  background-color: #e0f2f1;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.output-box:hover {
+  transform: scale(1.02);
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.output-box img {
+  border: 5px solid #004d40;
+  border-radius: 15px;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.output-box img:hover {
+  transform: rotate(2deg) scale(1.05);
+}
